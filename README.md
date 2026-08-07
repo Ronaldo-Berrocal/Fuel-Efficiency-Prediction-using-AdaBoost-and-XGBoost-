@@ -33,13 +33,18 @@ UCI Machine Learning Repository
 - MPG (Miles Per Gallon)
 
 **Features include:**
-- Cylinders
-- Displacement
-- Horsepower
-- Weight
-- Acceleration
-- Model year
-- Origin
+
+| Variable | Type | Description |
+| :---: | :---: | :--- |
+| `mpg` | Continuous | **TARGET** — Miles per gallon |
+| `cylinders` | Integer | Number of cylinders (3–8) |
+| `displacement` | Continuous | Engine displacement (in<sup>3</sup>) |
+| `horsepower` | Continuous | Power (horsepower) |
+| `weight` | Continuous | Vehicle weight (lbs) |
+| `acceleration` | Continuous | 0–60 mph time (seconds) |
+| `model_year` | Integer | Model year (70–82) |
+| `origin_2` | Dummy | European origin (1=yes) |
+| `origin_3` | Dummy | Japanese origin (1=yes) |
 
 ## Objetives 
 
@@ -73,11 +78,59 @@ The project follows the standard Machine Learning workflow:
 
 9.- Model comparison.
 
+## Results 
+
+```text
+| Model         |  RMSE  |   MAE  |   $R^2$   |
+| AdaBoost      | 2.4218 | 1.6681 |  0.8909   |
+| XGBoost       | 2.2973 | 1.7551 |  0.9018   |
+| AdaBoost (GS) | 2.2467 | 1.6681 |  0.9061   |
+| XGBoost (GS)  | 2.3529 | 1.7754 |  0.8970   |
+```
 
 
+## Repository Structure
+
+```text
+Project-MPG-AdaBoost-XGBoost/    
+├── data/                        
+│    ├── auto_mpg_clean.csv         # clean dataset (398 cars, not NA)
+│    ├── train_raw.csv              # 318 cars - unscaled training 
+│    ├── test_raw.csv               # 80 cars - unscaled test 
+│    ├── metrics_boosting.csv       # AdaBoost and XGBoost metrics 
+├── notebooks/
+│    ├── EDA_preprocessing.ipynb
+│    ├── XGBoost_AdaBoost.ipynb
+├── figures/
+├──
+├── src/
+├── README.md 
+└── requirements.txt
+```
+## Reproducibility 
+
+```text
+pip install -r requirements.txt
+```
+Ejecute the notebooks (EDA → XGB/ADA). 
+
+The EDA notebook generates files in /data/ for XGB and ADA.
+
+All notebooks use `random_state=42` and same split an 80/20.
 
 
+## Tecnologies 
 
+- Python
+- Pandas
+- Numpy
+- Scikit-learn
+- XGBoost Regressor (baseline model and optimize with GridSearchCV optimization)
+- AdaBoost Regressor (baseline model and optimize with GridSearchCV optimization)
+- Matplotlib
+- Seaborn 
+
+## 
 
 
 
