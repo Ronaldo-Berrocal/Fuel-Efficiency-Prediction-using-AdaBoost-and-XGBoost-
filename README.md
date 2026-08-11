@@ -80,13 +80,15 @@ The project follows the standard Machine Learning workflow:
 
 ## Results 
 
-```text
-| Model         |  RMSE  |   MAE  |   $R^2$   |
-| AdaBoost      | 2.4218 | 1.6681 |  0.8909   |
-| XGBoost       | 2.2973 | 1.7551 |  0.9018   |
-| AdaBoost (GS) | 2.2467 | 1.6681 |  0.9061   |
-| XGBoost (GS)  | 2.3529 | 1.7754 |  0.8970   |
-```
+**Model Performance — MPG Prediction**  
+Evaluation metrics across baseline and hyperparameter-tuned (GS) models
+
+| Model | RMSE | MAE | R<sup>2</sup> |
+| :--- | :---: | :---: | :---: |
+| `AdaBoost` | 2.4218 | 1.6681 | 0.8909 |
+| `XGBoost` | 2.2973 | 1.7551 | 0.9018 |
+| `AdaBoost (GS)` | 2.2467 | 1.6681 | 0.9061 |
+| `XGBoost (GS)` | 2.3529 | 1.7754 | 0.8970 |
 
 
 ## Repository Structure
