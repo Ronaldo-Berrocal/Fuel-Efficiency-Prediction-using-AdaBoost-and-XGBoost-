@@ -99,7 +99,7 @@ Project-MPG-AdaBoost-XGBoost/
 │    ├── auto_mpg_clean.csv         # clean dataset (398 cars, not NA)
 │    ├── train_raw.csv              # 318 cars - unscaled training 
 │    ├── test_raw.csv               # 80 cars - unscaled test 
-│    ├── metrics_boosting.csv       # AdaBoost and XGBoost metrics 
+│    ├── metrics_boosting.csv       # AdaBoost and XGBoost metrics
 ├── notebooks/
 │    ├── EDA_preprocessing.ipynb
 │    ├── XGBoost_AdaBoost.ipynb
