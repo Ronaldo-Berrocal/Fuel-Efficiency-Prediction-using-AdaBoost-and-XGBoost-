@@ -1,6 +1,6 @@
 # Fuel-Efficiency-Prediction-using-AdaBoost-and-XGBoost-
 This project compares models AdaBoost and XGBoost using Grid Search for predicting fuel efficiency (MPG) using the Auto MPG dataset from the UCI Machine Learning Repository. 
-This project includes data preprocessing, exploratory data analysis (EDA), hyperparameter tuning using GridSearchSV, model evaluation using RMSE and $R^2$, parity plots and interpretation of feature importance. 
+This project includes data preprocessing, exploratory data analysis (EDA), hyperparameter tuning using GridSearchSV, model evaluation using MAE, RMSE and $R^2$, parity plots and interpretation of feature importance. 
 
 ## Project Overview 
 
@@ -130,7 +130,17 @@ All notebooks use `random_state=42` and same split an 80/20.
 - Matplotlib
 - Seaborn 
 
-## 
+## Contact 
+
+Ronaldo Berrocal Reyes 
+
+Berrocal-Reyes30@ciencias.unam.mx 
+
+linkedin: www.linkedin.com/in/ronaldo-berrocal-reyes
+
+Physicist & Data Scientist - UNAM 
+
+
 
 
 
